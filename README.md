@@ -1,29 +1,31 @@
-Invoicing ROI Simulator — Documentation
-1. Planned Approach and Architecture
+# Invoicing ROI Simulator — Documentation
 
-The application calculates ROI, cost savings, and payback when switching from manual to automated invoicing.
+## 1. Planned Approach and Architecture
+The Invoicing ROI Simulator calculates **ROI, cost savings, and payback** when switching from manual to automated invoicing.
 
-Architecture:
+**Architecture:**
 
-Frontend: React.js — user inputs and displays results
+- **Frontend:** React.js — handles user inputs and displays results  
+- **Backend:** Node.js + Express — performs calculations and serves API requests  
+- **Database:** MongoDB — stores saved simulation scenarios  
 
-Backend: Node.js + Express — handles calculations and API requests
+**Flow:**  
+*React UI → Express API+Node.js → MongoDB*
 
-Database: MongoDB — stores saved simulation scenarios
+---
 
-Flow: React UI → Express API → MongoDB
+## 2. Technologies and Frameworks
 
-2. Technologies and Frameworks
-Component	Technology
-Frontend	React.js
-Backend	Node.js, Express.js
-Database	MongoDB
-3. Key Features
+| Component | Technology |
+|-----------|------------|
+| Frontend  | React.js   |
+| Backend   | Node.js, Express.js |
+| Database  | MongoDB    |
 
-ROI, savings, and payback calculator
+---
 
-Save, load, and delete simulation scenarios
-
-Email-gated report generation
-
-Always shows automation as beneficial
+## 3. Key Features
+- Calculate **ROI, monthly savings, and payback period**  
+- **Save, load, and delete** simulation scenarios  
+- **Email-gated report** generation (PDF/HTML)  
+- Always shows automation as **beneficial** (positive bias factor)
